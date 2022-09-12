@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: SPRING_DBA
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: admin
+    password: admin
+    url: jdbc:postgresql://localhost:5432/students_db
+    platform: postgres
+    initialization-mode: always
+    continue-on-error: true
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create
+    database: POSTGRESQL
+
+server:
+  http:
+    port: 8003
+  port: 8004
